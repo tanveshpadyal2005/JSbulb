@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bulb.css">
+</head>
+
+<body>
+
+
+
+
+    <button onclick="change()">ON</button>
+    <img id="demo1" src="./img/light-bulb-1-1427502.jpg" width="300px">
+    <button onclick="changebulb()">OFF</button><br><br>
+    <button onclick="hidebulb()">HIDE</button>
+    <button onclick="showbulb()">SHOW</button>
+
+    <script>
+
+        function change(){
+            document.getElementById('demo1').src ='./img/on.png'
+        }
+
+        function changebulb(){
+            document.getElementById('demo1').src ='./img/light-bulb-1-1427502.jpg'
+        }
+
+        function hidebulb(){
+            document.getElementById('demo1').style.display="none"
+        }
+
+        function showbulb(){
+            document.getElementById('demo1').style.display="block"
+        }
+
+    </script>
+</body>
+
+</html>
